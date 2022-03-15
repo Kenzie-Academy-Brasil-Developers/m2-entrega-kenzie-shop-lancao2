@@ -48,9 +48,9 @@ class app {
                 if(element.promotionStatus == true){
                     const valor = document.createElement("span")
                     valor.className = "riscado"
-                    valor.innerText = `R$ ${element.price.productPrice}`
+                    valor.innerText = ` De R$ ${element.price.productPrice}`
                     const valorPromocinal = document.createElement("span")
-                    valorPromocinal.innerText = `R$ ${element.price.productPromotionPrice}`
+                    valorPromocinal.innerText = ` Por R$ ${element.price.productPromotionPrice}`
                     card.appendChild(valor)
                     card.appendChild(valorPromocinal)
                 }else{
